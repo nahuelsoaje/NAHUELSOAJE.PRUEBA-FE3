@@ -13,9 +13,9 @@ const [show, setShow] = useState(false)
   return (
     <>
     <h1>Personaje Favorito</h1>
-    {<Form setUsuario={setUsuario} setShow={setShow}/>}
+    {<Form setUsuario={setUsuario} setShow={setShow} usuario={usuario}/>}
     {show && <Card usuario={usuario}/>}
-    {console.log(usuario)}
+    
     </> 
   )
 }
